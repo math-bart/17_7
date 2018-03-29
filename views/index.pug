@@ -1,0 +1,12 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Welcome
+    link(rel='Stylesheet', type='text/css', href='style.css')
+    style
+      include style.css
+  body
+    include ./header.pug  
+    form(action='http://localhost:3000/auth/google', method='GET')
+      h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lobortis nisl, sed ullamcorper ante. Sed vitae metus elementum, ultrices elit vitae, suscipit nibh. Fusce mattis eros eu interdum dapibus. Nam a purus vitae elit tristique bibendum id vel metus. Fusce laoreet sodales nisi. Fusce sollicitudin ac nisl eu ullamcorper. 
+      input.btn(type='submit', value='Log In')
